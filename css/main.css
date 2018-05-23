@@ -1,123 +1,93 @@
-* {
-  margin: 0;
-  padding: 0;
+#color > ul  {
+  width: 450px;
+  margin: 0 auto;
 }
-
-header {
-	margin-top:10px;
-  width: 100%;
-  overflow: hidden;
-  height: 150px;
+#color > ul > li  {
+  list-style: none;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+  display: inline-block;
+  line-height: 1;
+  margin: 1px;
+  border-radius: 3px;
   position: relative;
 }
-
-nav {
-  top:-20px;
+#color > ul > li > a  {
+  color: inherit;
+  text-decoration: none !important;
+  font-size: 24px;
+  padding: 25px;
+  display: block;
+}
+#color li ul  {
   position: absolute;
-  left:0;
-  right:0;
-	margin:20px auto;
-	max-width:1000px;
-	width:90%;
+  list-style: none;
+  text-align: center;
+  width: 160px;
+  left: 50%;
+  margin-left: -120px;
+  top: 70px;
+  font: bold 12px sans-serif;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s linear;
+  -moz-transition: max-height 0.4s linear;
+  transition: max-height 0.4s linear;
 }
-
-nav ul {
-	list-style:none;
+#color li:hover ul  {
+  max-height: 200px;
 }
-
-nav > ul {
-	display:table;
-	width:100%;
-	background:#000;
-	position:relative;
+#color li ul li  {
+  background-color: #313131;
 }
-
-nav > ul li {
-	display:table-cell;
+#color li ul li a  {
+  padding: 12px;
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
 }
-
-/*Sub-menu*/
-nav > ul > li:hover > ul {
-	display:block;
-	height:100%;
+#color li ul li:nth-child(odd)  {
+  background-color: #363636;
 }
-
-nav > ul > li > ul {
-	display:block;
-	position:absolute;
-	background:#000;
-	left:0;
-	right:0;
-	overflow:hidden;
-	height:0%;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+#color li ul li:hover  {
+  background-color: #444;
 }
-
-nav > ul li a {
-	color:#fff;
-	display:block;
-	line-height:20px;
-	padding:20px;
-	position: relative;
-	text-align:center;
-	text-decoration:none;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+#color li ul li:first-child  {
+  border-radius: 3px 3px 0 0;
+  margin-top: 25px;
+  position: relative;
 }
-
-nav > ul > li > ul > li a:hover {
-	background:#5da5a2;
+#color li ul li:before  {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 5px solid transparent;
+  border-bottom-color: #313131;
+  left: 50%;
+  top: -10px;
+  margin-left: -5px;
 }
-
-nav > ul > li > a span {
-	background:#174459;
-	display:block;
-	height:100%;
-	width:100%;
-	left:0;
-	position:absolute;
-	top:-55px;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+#color li ul li:last-child  {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
-
-nav > ul > li > a span .icon {
-	display:block;
-	line-height:60px;
-  top:10px;
+#color li.green  {
+  background-color: #00c08b;
+  color: #127a5d;
 }
-
-nav > ul > li > a:hover > span {
-	top:0;
+#color li.red  {
+  background-color:#ea5080;
+  color:#aa2a52;
 }
-
-/*Colores*/
-nav ul li a .primero {
-	background:#0e5061;
+#color li.blue  {
+  background-color:#53bfe2;
+  color:#2884a2;
 }
-
-nav ul li a .segundo {
-	background:#5da5a2;
+#color li.yellow  {
+  background-color:#f8c54d;
+  color:#ab8426;
 }
-
-nav ul li a .tercero {
-	background:#f25724;
-}
-
-nav ul li a .cuarto {
-	background:#174459;
-}
-
-nav ul li a .quinto {
-	background:#37a4d9;
+#color li.purple  {
+  background-color:#df6dc2;
+  color:#9f3c85;
 }
